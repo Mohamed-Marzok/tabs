@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;
+}
+.container {
+  width: 300px;
+}
+.tabs {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  width: 100%;
+}
+.tabs li {
+  width: 34%;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+}
+.tabs li:not(:last-child) {
+  border-right: 2px solid #eee;
+}
+.tabs li.active {
+  background-color: #eee;
+  color: black;
+}
+.content {
+  padding: 20px;
+  background-color: #eee;
+  font-size: 24px;
+}
+.content div {
+  display: none;
+}
+.content div.active {
+  display: block;
+}
